@@ -1,0 +1,293 @@
+/*==========================================
+        RESPONSIVE CSS
+==========================================*/
+
+/*========== LARGE LAPTOPS ==========*/
+
+@media (max-width:1400px){
+
+.hero-content h1{
+font-size:65px;
+}
+
+.section-title h2{
+font-size:42px;
+}
+
+.pledge-right h2{
+font-size:42px;
+}
+
+}
+
+/*========== LAPTOP ==========*/
+
+@media (max-width:1200px){
+
+header{
+padding:18px 5%;
+}
+
+.hero,
+.story,
+.forest,
+.gallery,
+.weather,
+.contact,
+.pledge,
+.testimonials,
+.counter-section,
+.documentation-box,
+footer{
+padding-left:5%;
+padding-right:5%;
+}
+
+.hero-content h1{
+font-size:58px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.story-container,
+.forest-container,
+.pledge-container{
+gap:45px;
+}
+
+.footer-container{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+/*========== TABLET ==========*/
+
+@media (max-width:992px){
+
+.menu-toggle{
+display:block;
+font-size:32px;
+color:#fff;
+cursor:pointer;
+z-index:1001;
+}
+
+.nav-menu{
+position:fixed;
+top:0;
+right:-100%;
+width:280px;
+height:100vh;
+background:#081b13;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+gap:35px;
+transition:.5s;
+box-shadow:-10px 0 30px rgba(0,0,0,.4);
+}
+
+.nav-menu.active{
+right:0;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.story-container,
+.forest-container,
+.pledge-container{
+grid-template-columns:1fr;
+}
+
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.weather{
+grid-template-columns:repeat(2,1fr);
+}
+
+.counter-section{
+grid-template-columns:repeat(2,1fr);
+}
+
+.footer-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.social-icons{
+justify-content:center;
+}
+
+}
+
+/*========== MOBILE ==========*/
+
+@media (max-width:768px){
+
+.hero{
+padding-top:120px;
+min-height:100vh;
+}
+
+.hero-content h1{
+font-size:44px;
+}
+
+.hero-content h3{
+font-size:22px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.section-title h2{
+font-size:34px;
+}
+
+.story-content h3,
+.forest-content h2,
+.pledge-right h2{
+font-size:32px;
+}
+
+.story-content p,
+.forest-content p,
+.pledge-right p{
+font-size:16px;
+}
+
+.gallery-grid{
+grid-template-columns:1fr;
+}
+
+.weather{
+grid-template-columns:1fr;
+}
+
+.counter-section{
+grid-template-columns:1fr;
+}
+
+.pledge-list{
+grid-template-columns:1fr;
+}
+
+.footer-about h2{
+font-size:32px;
+}
+
+.footer-links h3,
+.footer-social h3{
+font-size:24px;
+}
+
+.btn{
+padding:14px 28px;
+font-size:16px;
+}
+
+#scrollTop,
+#musicBtn{
+width:55px;
+height:55px;
+font-size:20px;
+}
+
+.sun{
+width:90px;
+height:90px;
+right:30px;
+top:100px;
+}
+
+.cloud1,
+.cloud2,
+.cloud3{
+transform:scale(.7);
+}
+
+}
+
+/*========== SMALL MOBILE ==========*/
+
+@media (max-width:480px){
+
+.logo{
+font-size:24px;
+}
+
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-content h3{
+font-size:18px;
+}
+
+.hero-content p{
+font-size:15px;
+}
+
+.section-title h2{
+font-size:28px;
+}
+
+.story,
+.forest,
+.gallery,
+.weather,
+.contact,
+.pledge,
+.testimonials,
+.counter-section,
+.documentation-box{
+padding-top:80px;
+padding-bottom:80px;
+}
+
+.counter-box h2{
+font-size:42px;
+}
+
+.counter-box p{
+font-size:17px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:15px;
+font-size:15px;
+}
+
+.documentation-box h2{
+font-size:30px;
+}
+
+.documentation-box p{
+font-size:16px;
+}
+
+.footer{
+padding-top:70px;
+}
+
+.social-icons a{
+width:48px;
+height:48px;
+font-size:18px;
+}
+
+}

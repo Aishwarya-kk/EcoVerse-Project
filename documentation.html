@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>EcoVerse Documentation</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#081b13;
+color:#fff;
+line-height:1.8;
+}
+
+header{
+background:linear-gradient(135deg,#2ecc71,#00b894);
+padding:60px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+header p{
+font-size:18px;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:60px 0;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:35px;
+margin-bottom:35px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.card h2{
+color:#2ecc71;
+margin-bottom:20px;
+font-size:34px;
+}
+
+.card p{
+font-size:17px;
+margin-bottom:15px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+table th,
+table td{
+border:1px solid rgba(255,255,255,.2);
+padding:15px;
+text-align:left;
+}
+
+table th{
+background:#2ecc71;
+color:#fff;
+}
+
+ul{
+padding-left:25px;
+}
+
+li{
+margin:10px 0;
+}
+
+a{
+color:#2ecc71;
+text-decoration:none;
+}
+/*==========================================
+        SCREENSHOT SECTION
+==========================================*/
+
+.screenshot-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+margin-top:30px;
+
+}
+
+
+.screenshot-grid div{
+
+background:rgba(255,255,255,.08);
+
+padding:20px;
+
+border-radius:20px;
+
+text-align:center;
+
+transition:.4s;
+
+}
+
+
+.screenshot-grid div:hover{
+
+transform:translateY(-10px);
+
+background:rgba(46,204,113,.25);
+
+}
+
+
+.screenshot-grid h3{
+
+margin-bottom:15px;
+
+color:#2ecc71;
+
+}
+
+
+.screenshot-grid img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
+
+
+/*==========================================
+        FOOTER STYLE
+==========================================*/
+
+footer{
+
+background:#04110c;
+
+text-align:center;
+
+padding:35px 20px;
+
+color:#d7f7e4;
+
+font-size:16px;
+
+line-height:2;
+
+}
+
+
+footer strong{
+
+color:#2ecc71;
+
+font-size:18px;
+
+}
+
+
+/*==========================================
+        DOCUMENTATION RESPONSIVE
+==========================================*/
+
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:36px;
+
+}
+
+
+.container{
+
+width:92%;
+
+}
+
+
+.card{
+
+padding:25px;
+
+}
+
+
+.card h2{
+
+font-size:28px;
+
+}
+
+
+table{
+
+font-size:14px;
+
+display:block;
+
+overflow-x:auto;
+
+}
+
+
+.screenshot-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#04110c;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌿 EcoVerse Documentation</h1>
+
+<p>
+Frontend Web Development Competition Project
+</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>1. Project Overview</h2>
+
+<p><strong>Project Title :</strong> EcoVerse – Save Our Planet</p>
+
+<p><strong>Website Category :</strong> Interactive Environmental Awareness Website</p>
+
+<p>
+
+<strong>Problem Statement :</strong>
+
+Environmental pollution, deforestation,
+climate change and improper waste management
+are increasing every year.
+This website spreads awareness about
+protecting nature through an interactive
+digital experience.
+
+</p>
+
+<p>
+
+<strong>Why this project?</strong>
+
+Instead of creating a regular website,
+EcoVerse provides an engaging storytelling
+experience with animations,
+interactive sections,
+nature-inspired visuals and educational
+content that encourages users to protect
+our environment.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>2. Project Description</h2>
+
+<p>
+
+EcoVerse is a modern interactive website
+created using HTML5,
+CSS3 and JavaScript.
+The project aims to inspire users to
+understand the importance of forests,
+water conservation,
+clean energy and wildlife protection.
+
+The website includes animated sections,
+beautiful nature galleries,
+environmental statistics,
+interactive buttons,
+smooth scrolling,
+glassmorphism UI,
+responsive layouts and engaging user
+experience.
+
+Future improvements include adding AI-based
+environmental tips,
+real-time weather integration,
+tree plantation tracking,
+carbon footprint calculator,
+user login and leaderboard for green
+activities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>3. Technology Stack</h2>
+
+<ul>
+
+<li>HTML5</li>
+
+<li>CSS3</li>
+
+<li>JavaScript (ES6)</li>
+
+<li>Google Fonts</li>
+
+<li>Font Awesome Icons</li>
+
+<li>Unsplash / Pexels Images</li>
+
+<li>Vercel Deployment</li>
+
+<li>Git & GitHub</li>
+
+</ul>
+
+</div>
+<div class="card">
+
+<h2>4. Team Information</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Roll Number</th>
+
+<th>Department</th>
+
+<th>Year</th>
+
+<th>Email</th>
+
+</tr>
+
+<tr>
+
+<td>Aishwarya K</td>
+
+<td>1SP23IS002</td>
+
+<td>Information Science & Engineering</td>
+
+<td>3rd Year (2026)</td>
+
+<td>aish200523@gmail.com</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>5. Team Contribution</h2>
+
+<table>
+
+<tr>
+
+<th>Team Member</th>
+
+<th>Contribution</th>
+
+</tr>
+
+<tr>
+
+<td>Aishwarya K</td>
+
+<td>
+
+Completed the entire project independently,
+including UI/UX Design,
+HTML Structure,
+CSS Styling,
+Animations,
+JavaScript Functionality,
+Responsive Design,
+Testing,
+Documentation,
+GitHub Repository and Deployment.
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h2>6. Challenges Faced</h2>
+
+<ul>
+
+<li>
+Creating smooth animations while maintaining website performance.
+</li>
+
+<li>
+Making every section fully responsive for mobile, tablet and desktop devices.
+</li>
+
+<li>
+Combining multiple JavaScript animations without affecting page speed.
+</li>
+
+<li>
+Designing a modern glassmorphism user interface.
+</li>
+
+<li>
+Optimizing images and animations for faster loading.
+</li>
+
+</ul>
+
+<h3 style="margin-top:25px;color:#2ecc71;">
+How They Were Solved
+</h3>
+
+<ul>
+
+<li>Used optimized CSS animations.</li>
+
+<li>Applied responsive media queries.</li>
+
+<li>Improved JavaScript performance.</li>
+
+<li>Tested the website on multiple screen sizes.</li>
+
+<li>Optimized layouts and visual hierarchy.</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>7. Learning Outcomes</h2>
+
+<ul>
+
+<li>Responsive Web Design</li>
+
+<li>HTML5 Semantic Elements</li>
+
+<li>Advanced CSS3 Animations</li>
+
+<li>Glassmorphism UI Design</li>
+
+<li>JavaScript DOM Manipulation</li>
+
+<li>Event Handling</li>
+
+<li>Smooth Scrolling</li>
+
+<li>Interactive User Experience</li>
+
+<li>Website Optimization</li>
+
+<li>Git & GitHub Version Control</li>
+
+<li>Vercel Website Deployment</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h2>8. Feedback on Frontend Web Development Training</h2>
+
+<p>
+
+The Frontend Web Development training was an
+excellent learning experience.
+It provided a strong foundation in HTML, CSS
+and JavaScript while encouraging creativity
+through practical projects.
+The hands-on sessions helped improve problem-
+solving skills, responsive web design and UI
+development techniques.
+
+The training also motivated me to explore
+modern animations, user experience principles
+and deployment using GitHub and Vercel.
+Overall, it enhanced my confidence in building
+real-world websites and strengthened my
+interest in frontend development.
+
+</p>
+
+</div>
+<!--==================== PROJECT SCREENSHOTS ====================-->
+<!--==================== PROJECT SCREENSHOTS ====================-->
+
+<div class="card">
+
+<h2>9. Project Screenshots</h2>
+
+<p>
+Screenshots of important pages of the EcoVerse website.
+</p>
+
+
+<div class="screenshot-grid">
+
+
+<div>
+
+<h3>Home Page</h3>
+
+<img src="Home.png"
+alt="EcoVerse Home Page">
+
+</div>
+
+
+<div>
+
+<h3>Nature Journey Section</h3>
+
+<img src="About.png"
+alt="Nature Journey">
+
+</div>
+
+
+<div>
+
+<h3>Gallery Section</h3>
+
+<img src="gallrey.png"
+alt="Gallery">
+
+</div>
+
+
+<div>
+
+<h3>Mobile Responsive View</h3>
+
+<img src="mobile.png"
+alt="Mobile View">
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!--==================== GITHUB & DEPLOYMENT ====================-->
+
+<div class="card">
+
+<h2>10. GitHub & Deployment Links</h2>
+
+
+<p>
+
+<i class="fa-brands fa-github"></i>
+
+<strong> GitHub Repository</strong>
+
+</p>
+
+
+<a href="YOUR_GITHUB_LINK"
+target="_blank">
+
+Visit GitHub Repository
+
+</a>
+
+
+
+<p style="margin-top:25px;">
+
+<i class="fa-solid fa-globe"></i>
+
+<strong> Live Website</strong>
+
+</p>
+
+
+<a href="YOUR_VERCEL_LINK"
+target="_blank">
+
+Visit Live Website
+
+</a>
+
+
+</div>
+
+
+
+<!--==================== DEVELOPER DETAILS ====================-->
+
+<div class="card">
+
+<h2>Developer Information</h2>
+
+
+<p>
+
+<strong>
+Designed & Developed By:
+</strong>
+
+Aishwarya K
+
+</p>
+
+
+<p>
+
+<strong>
+Department:
+</strong>
+
+Information Science & Engineering (ISE)
+
+</p>
+
+
+<p>
+
+<strong>
+College:
+</strong>
+
+SEA College of Engineering, Bangalore
+
+</p>
+
+
+<p>
+
+<strong>
+Project Type:
+</strong>
+
+Frontend Web Development Competition Project
+
+</p>
+
+
+</div>
+<!--==================== LINKS ====================-->
+
+
+
+
+<!--==================== PROJECT SUMMARY ====================-->
+
+<div class="card">
+
+<h2>Project Summary</h2>
+
+<p>
+
+EcoVerse demonstrates how frontend technologies
+can be used to create meaningful digital
+experiences. The project combines creativity,
+technology, and environmental awareness to
+encourage users to understand the importance
+of protecting our planet.
+
+Through interactive design, animations,
+responsive layouts, and modern web development
+practices, this project represents my learning
+journey in frontend development.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<footer>
+
+<p>
+© 2026 EcoVerse
+</p>
+
+<p>
+Designed & Developed by 
+<strong>Aishwarya K</strong>
+</p>
+
+<p>
+Information Science & Engineering (ISE)
+</p>
+
+<p>
+SEA College of Engineering, Bangalore
+</p>
+<p>Frontend WEb Development Competition 2026</p>
+<p>Organized by Destination Career</p>
+
+</footer>
+</body>
+</html>

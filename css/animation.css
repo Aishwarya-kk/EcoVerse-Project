@@ -1,0 +1,628 @@
+/*==========================================
+        EcoVerse Animation.css
+==========================================*/
+
+/*========== LOADER ==========*/
+
+@keyframes loading{
+
+0%{
+width:0%;
+}
+
+100%{
+width:100%;
+}
+
+}
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+}
+
+/*========== FLOATING ==========*/
+
+@keyframes float{
+
+0%{
+transform:translateY(0px);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+100%{
+transform:translateY(0px);
+}
+
+}
+
+.hero-content{
+animation:fadeUp 1.5s ease;
+}
+
+.hero-image img{
+animation:float 5s ease-in-out infinite;
+}
+
+/*========== FADE UP ==========*/
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(70px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/*========== CLOUDS ==========*/
+
+.cloud{
+
+animation:cloudMove 40s linear infinite;
+
+}
+
+.cloud2{
+
+animation-duration:55s;
+
+}
+
+.cloud3{
+
+animation-duration:65s;
+
+}
+
+@keyframes cloudMove{
+
+0%{
+
+transform:translateX(-300px);
+
+}
+
+100%{
+
+transform:translateX(1800px);
+
+}
+
+}
+
+/*========== SUN ==========*/
+
+.sun{
+
+animation:sunGlow 4s ease-in-out infinite;
+
+}
+
+@keyframes sunGlow{
+
+0%{
+
+box-shadow:0 0 60px #FFD93D;
+
+transform:scale(1);
+
+}
+
+50%{
+
+box-shadow:0 0 120px #FFD93D;
+
+transform:scale(1.1);
+
+}
+
+100%{
+
+box-shadow:0 0 60px #FFD93D;
+
+transform:scale(1);
+
+}
+
+}
+
+/*========== BIRDS ==========*/
+
+.bird{
+
+animation:fly 18s linear infinite;
+
+}
+
+.bird2{
+
+animation-delay:5s;
+
+}
+
+.bird3{
+
+animation-delay:10s;
+
+}
+
+@keyframes fly{
+
+0%{
+
+transform:translateX(-300px);
+
+}
+
+100%{
+
+transform:translateX(1800px);
+
+}
+
+}
+
+/*========== BUTTON ==========*/
+
+.btn{
+
+animation:pulse 2.5s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 rgba(46,204,113,.6);
+
+}
+
+50%{
+
+box-shadow:0 0 35px rgba(46,204,113,.7);
+
+}
+
+100%{
+
+box-shadow:0 0 0 rgba(46,204,113,.6);
+
+}
+
+}
+
+/*========== HERO TITLE ==========*/
+
+.hero-content h1{
+
+animation:zoomText 1.5s ease;
+
+}
+
+@keyframes zoomText{
+
+0%{
+
+transform:scale(.6);
+
+opacity:0;
+
+}
+
+100%{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+/*========== STORY IMAGE ==========*/
+
+.story-image img{
+
+animation:float 6s ease-in-out infinite;
+
+}
+
+/*========== FOREST IMAGE ==========*/
+
+.forest-image img{
+
+animation:forestFloat 7s ease-in-out infinite;
+
+}
+
+@keyframes forestFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/*========== GALLERY ==========*/
+
+.gallery-item{
+
+overflow:hidden;
+
+}
+
+.gallery-item img{
+
+transition:1s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.2) rotate(2deg);
+
+}
+
+/*========== COUNTER ==========*/
+
+.counter-box{
+
+animation:counterPop 1.5s ease;
+
+}
+
+@keyframes counterPop{
+
+0%{
+
+opacity:0;
+
+transform:scale(.5);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+/*========== WEATHER ==========*/
+
+.weather-card{
+
+animation:float 5s ease-in-out infinite;
+
+}
+
+.weather-card:nth-child(2){
+
+animation-delay:1s;
+
+}
+
+.weather-card:nth-child(3){
+
+animation-delay:2s;
+
+}
+
+.weather-card:nth-child(4){
+
+animation-delay:3s;
+
+}
+
+/*========== TESTIMONIAL ==========*/
+
+.testimonial-card{
+
+animation:fadeUp 1.2s ease;
+
+}
+
+/*========== SOCIAL ICONS ==========*/
+
+.social-icons a{
+
+transition:.6s;
+
+}
+
+.social-icons a:hover{
+
+transform:translateY(-8px) rotate(360deg);
+
+}
+/*==========================================
+        RAIN ANIMATION
+==========================================*/
+
+.rain{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+pointer-events:none;
+overflow:hidden;
+z-index:2;
+}
+
+.drop{
+position:absolute;
+bottom:100%;
+width:2px;
+height:80px;
+background:linear-gradient(transparent,#bdefff);
+opacity:.6;
+animation:rainFall linear infinite;
+}
+
+@keyframes rainFall{
+
+0%{
+transform:translateY(-100vh);
+opacity:0;
+}
+
+10%{
+opacity:1;
+}
+
+100%{
+transform:translateY(120vh);
+opacity:0;
+}
+
+}
+
+/*==========================================
+        FALLING LEAVES
+==========================================*/
+
+.leaf{
+position:absolute;
+font-size:28px;
+pointer-events:none;
+animation:leafFall linear infinite;
+z-index:3;
+}
+
+@keyframes leafFall{
+
+0%{
+transform:translateY(-150px) rotate(0deg);
+opacity:1;
+}
+
+50%{
+transform:translateY(50vh) translateX(60px) rotate(180deg);
+}
+
+100%{
+transform:translateY(120vh) translateX(-80px) rotate(360deg);
+opacity:0;
+}
+
+}
+
+/*==========================================
+        BUTTERFLIES
+==========================================*/
+
+.butterfly{
+position:absolute;
+font-size:28px;
+z-index:5;
+animation:butterflyFly 18s linear infinite;
+}
+
+.butterfly:nth-child(2){
+animation-delay:5s;
+}
+
+.butterfly:nth-child(3){
+animation-delay:10s;
+}
+
+@keyframes butterflyFly{
+
+0%{
+transform:translate(-200px,50px);
+}
+
+25%{
+transform:translate(250px,-40px);
+}
+
+50%{
+transform:translate(700px,80px);
+}
+
+75%{
+transform:translate(1100px,-30px);
+}
+
+100%{
+transform:translate(1600px,60px);
+}
+
+}
+
+/*==========================================
+        FIREFLIES
+==========================================*/
+
+.firefly{
+position:absolute;
+width:8px;
+height:8px;
+background:#fff176;
+border-radius:50%;
+box-shadow:0 0 20px #ffee58;
+animation:firefly 5s ease-in-out infinite;
+}
+
+@keyframes firefly{
+
+0%,100%{
+opacity:.2;
+transform:translateY(0);
+}
+
+50%{
+opacity:1;
+transform:translateY(-30px);
+}
+
+}
+
+/*==========================================
+        STARS
+==========================================*/
+
+.stars{
+position:absolute;
+inset:0;
+pointer-events:none;
+}
+
+.star{
+position:absolute;
+width:4px;
+height:4px;
+background:#fff;
+border-radius:50%;
+animation:twinkle 2.5s infinite ease-in-out;
+}
+
+@keyframes twinkle{
+
+0%,100%{
+opacity:.2;
+transform:scale(.6);
+}
+
+50%{
+opacity:1;
+transform:scale(1.5);
+}
+
+}
+
+/*==========================================
+        RIVER
+==========================================*/
+
+.river{
+animation:riverFlow 8s linear infinite;
+background-size:200% 100%;
+}
+
+@keyframes riverFlow{
+
+0%{
+background-position:0 0;
+}
+
+100%{
+background-position:200% 0;
+}
+
+}
+
+/*==========================================
+        SCROLL BUTTON
+==========================================*/
+
+#scrollTop{
+animation:float 2.5s ease-in-out infinite;
+}
+
+/*==========================================
+        MUSIC BUTTON
+==========================================*/
+
+#musicBtn.playing{
+animation:musicPulse 1s infinite;
+}
+
+@keyframes musicPulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.15);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/*==========================================
+        PAGE FADE
+==========================================*/
+
+section{
+animation:sectionFade 1s ease;
+}
+
+@keyframes sectionFade{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
