@@ -1,0 +1,1 @@
+This project was developed by Aishwarya K for the Frontend Web Development Competition 2026, conducted by Destination Career in association with SEA College of Engineering and Technology. Built using HTML, CSS, and JavaScript with a focus on creativity, responsiveness, and user experience
